@@ -7,18 +7,22 @@ import './Series.css';
 class Series extends Component {
 
   componentDidMount() {
-    this.props.getMoviesDispatch();
+    !this.props.isAlreadyFetched ?  this.props.getMoviesDispatch() : null;
   };
 
   render() {
     return (
-      <MainContent />
+      <MainContent types={'series'} />
     );
   }
 }
+
+const mapStateToProps = state => ({
+  isAlreadyFetched: state.movieList.getMoviesFromDatabase,
+});
 
 const mapDispatchToProps = dispatch => ({
   getMoviesDispatch: data => dispatch(getMovies(data)),
 });
 
-export default connect(null, mapDispatchToProps)(Series);
+export default connect(mapStateToProps, mapDispatchToProps)(Series);
