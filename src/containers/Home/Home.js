@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import Header from '../../components/Header/Header';
-import Content from '../../components/Content/Content';
-import Footer from '../../components/Footer/Footer';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 class Home extends Component {
@@ -9,9 +7,29 @@ class Home extends Component {
   render() {
     return (
       <div className="container">
-        <Header />
-        <Content/>
-        <Footer/>
+        <div className="content-container">
+          <div className="content-title">
+            <p>Popular Titles</p>
+          </div>
+          <div className="box-container">
+            <Link to='/series'>
+              <div>
+                <div className="box">
+                  <h3 className="box-title">SERIES</h3>
+                </div>
+                <div> <p>Popular Series</p></div>
+              </div>
+            </Link>
+            <Link to='/movies'>
+              <div>
+                <div className="box">
+                  <h3 className="box-title">Movies</h3>
+                </div>
+                <div><p>Popular Series</p></div>
+              </div>
+           </Link>
+          </div>
+        </div>
       </div>
     );
   }

@@ -1,8 +1,8 @@
 import { API } from '../middlewares/api';
 
 export const getMovies = () => ({
-  type: 'GET_QUESTIONS',
+  type: 'GET_MOVIES',
   [API]: {
-    movies: true,
+    endpoint: '/getMovies',
   },
 });
