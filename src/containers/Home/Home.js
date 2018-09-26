@@ -22,7 +22,7 @@ class Home extends Component {
                 <div className="box">
                   <h3 className="box-title">Movies</h3>
                 </div>
-                <div><p>Popular Series</p></div>
+                <div><p>Popular Titles</p></div>
               </div>
            </Link>
           </div>
