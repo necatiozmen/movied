@@ -6,3 +6,8 @@ export const getMovies = () => ({
     endpoint: '/getMovies',
   },
 });
+
+export const changeHeaderTitle = (data) => ({
+  type: 'CHANGE_HEADER_TITLE',
+  data,
+});

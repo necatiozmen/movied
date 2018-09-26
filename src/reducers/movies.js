@@ -1,5 +1,6 @@
 const defaultState = {
   series: [],
+  headerTitle: 'Popular Titles',
 
 };
 
@@ -15,6 +16,8 @@ const movies = (state = defaultState, action) => {
       };
     case 'GET_MOVIES_FAILURE':
       return { ...state, getMoviesFromDatabaseFailed: true };
+    case 'CHANGE_HEADER_TITLE':
+      return { ...state, headerTitle: action.data };
     default:
       return state;
   }
