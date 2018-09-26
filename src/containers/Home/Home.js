@@ -8,9 +8,6 @@ class Home extends Component {
     return (
       <div className="container">
         <div className="content-container">
-          <div className="content-title">
-            <p>Popular Titles</p>
-          </div>
           <div className="box-container">
             <Link to='/series'>
               <div>

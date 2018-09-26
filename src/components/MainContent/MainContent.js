@@ -9,6 +9,7 @@ class MainContent extends Component {
       return this.props.series.entries
       .filter((item, index) => item.releaseYear >= 2010 && item.programType === this.props.types)
       .sort((a, b) => a.title > b.title ? 1 : -1)
+      .slice(0, 20)
       .map((item, index) =>
         <div className="box-main" key={index}>
           <div>
