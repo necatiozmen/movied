@@ -3,7 +3,14 @@ import { API } from '../middlewares/api';
 export const getMovies = () => ({
   type: 'GET_MOVIES',
   [API]: {
-    endpoint: '/getMovies',
+    endpoint: '/v1/api/feed/movies',
+  },
+});
+
+export const getSeries = () => ({
+  type: 'GET_SERIES',
+  [API]: {
+    endpoint: '/v1/api/feed/series',
   },
 });
 

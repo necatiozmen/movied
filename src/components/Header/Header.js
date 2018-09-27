@@ -6,19 +6,21 @@ import './Header.css';
 const Header = props => {
   return (
     <div className="header-container">
-      <div className="blue-header-container">
-        <Link to='/'>
-          <div className="title">
-            <h1>DEMO Streaming</h1>
-          </div>
-        </Link>
-        <div className="header-login">
-          <div>Login</div>
-          <div>Start your free trial</div>
+      <div className="header-nav">
+        <div>
+          <Link to='/' style={{ textDecoration: 'none', color: '#fff' }}>
+            <h1 className="header-title">DEMO Streaming</h1>
+          </Link>
+        </div>
+        <div className="login">
+          <div className="login-box"><p>Log in</p></div>
+          <div className="login-box"><p>Start your free trial</p></div>
         </div>
       </div>
-      <div>
-        <h2>{props.headerTitle}</h2>
+      <div className="entries-type">
+        <div className="entries-type-title">
+          <p>{props.headerTitle}</p>
+        </div>
       </div>
     </div>
   );
