@@ -62,13 +62,14 @@
 
 
 @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (min-width: 375px)
+  and (max-width: 667px)
+ {
 
     .header-container {
       height: 120px;
       font-size: 8px;
+
     }
 
     .header-nav {
@@ -84,6 +85,7 @@
       justify-content: center;
     }
 
+
     .entries-type-title > p {
      font-size: 12px;
     }
@@ -91,9 +93,9 @@
 }
 
 @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (min-width: 320px)
+  and (max-width: 568px)
+   {
     .header-container {
       height: 120px;
       font-size: 8px;
@@ -116,7 +118,7 @@
     }
 
     .entries-type-title > p {
-     font-size: 12px;
+     font-size: 15px;
     }
 
 
