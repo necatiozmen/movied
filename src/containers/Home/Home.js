@@ -9,22 +9,20 @@ class Home extends Component {
       <div className="container">
         <div className="content-container">
           <div className="box-container">
-            <Link to='/series'>
-              <div>
-                <div className="box">
-                  <h3 className="box-title">SERIES</h3>
-                </div>
-                <div> <p>Popular Series</p></div>
+            <Link to='/series' style={{ textDecoration: 'none', color: '#fff' }}>
+              <div className="box">
+                <h1 style={{ fontWeight: '400' }}>SERIES</h1>
               </div>
             </Link>
-            <Link to='/movies'>
-              <div>
-                <div className="box">
-                  <h3 className="box-title">Movies</h3>
-                </div>
-                <div><p>Popular Titles</p></div>
+            <div className="box-under-title"><p>Popular Series</p></div>
+          </div>
+          <div className="box-container">
+            <Link to='/movies' style={{ textDecoration: 'none', color: '#fff' }}>
+              <div className="box">
+                <h1 style={{ fontWeight: '400' }}>MOVIES</h1>
               </div>
-           </Link>
+            </Link>
+            <div className="box-under-title"> <p>Popular Movies</p></div>
           </div>
         </div>
       </div>
