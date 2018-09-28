@@ -33,7 +33,7 @@ const Footer = props => {
           <div className="footer-icons-app">
             <Icon name="appstore" width={140} height={35} />
             <Icon name="playstore" width={140} height={35} />
-            <Icon name="windowstore" width={140} height={35} />
+            <Icon name="windowstore" width={120} height={35} />
           </div>
         </div>
       </div>

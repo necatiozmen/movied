@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { changeHeaderTitle } from '../../actions';
 import './Home.css';
 
 class Home extends Component {
 
+  componentDidMount() {
+    this.props.changeHeaderTitle('Popular Titles');
+  }
+
   render() {
     return (
       <div className="container">
-        <div className="content-container">
+        <div className="home-container">
           <div className="box-container">
             <Link to='/series' style={{ textDecoration: 'none', color: '#fff' }}>
               <div className="box">
@@ -30,4 +36,8 @@ class Home extends Component {
   }
 }
 
-export default Home;
+const mapDispatchToProps = dispatch => ({
+  changeHeaderTitle: data => dispatch(changeHeaderTitle(data)),
+});
+
+export default connect(null, mapDispatchToProps)(Home);

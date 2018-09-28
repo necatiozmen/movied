@@ -1,9 +1,6 @@
 
 .content-container {
-  padding-right: 95px;
-  padding-left: 95px;
-  padding-top: 35px;
-  padding-bottom: 90px;
+  padding: 50px 95px 80px;
   background-color: #FDFDFD;
 }
 
@@ -13,14 +10,11 @@
   justify-content: space-around;
 }
 
+
 @media only screen
   and (min-width: 320px)
-  and (max-width: 667px)
- {
-
-   .content-container {
-     padding-right: 13px;
-     padding-left: 13px;
-
-   }
+  and (max-width: 667px) {
+  .content-container {
+    padding: 60px 20px 40px;
+  }
 }

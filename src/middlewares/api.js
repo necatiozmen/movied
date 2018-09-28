@@ -3,17 +3,10 @@ export const SERVER_BASE_URL = 'http://localhost:5000';
 
 export const api = store => next => action => {
   if (action[API]) {
-    const {
-      endpoint,
-      method,
-      body,
-      headers,
-    } = action[API];
+    const { endpoint, method } = action[API];
 
     fetch(`${SERVER_BASE_URL}${endpoint}`, {
-        method: method || 'GET',
-        body: JSON.stringify(body),
-        headers,
+        method: method,
       })
       .then(result => result.json())
       .then((data) => {

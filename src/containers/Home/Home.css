@@ -1,25 +1,20 @@
 .container {
- /* display: flex; */
- padding: 20px;
- margin-bottom: 100px;
  font-family: 'Open Sans', 'Roboto', sans-serif;
  font-weight: 300;
  font-size: 14px;
 }
 
-.content-container {
+.home-container {
   display: flex;
-  /* justify-content: flex-start; */
-  padding-top: 15px;
-  padding-left: 80px;
+  padding: 35px 95px 80px;
+  background-color: #FDFDFD;
 }
 
-.content-container > div:first-child {
+.home-container > div:first-child {
   margin-right: 15px;
 }
 
 .box-container {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -35,32 +30,33 @@
   background-image: url('../../assets/placeholder.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center ;
+  background-position: center;
 }
 
 @media only screen
   and (min-width: 320px)
-  and (max-width: 667px)
- {
+  and (max-width: 667px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-   .container {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-   }
+  .home-container {
+    flex-direction: column;
+  }
 
-   .content-container {
-     flex-direction: column;
-     padding-left: 0;
-   }
+  .home-container > div:first-child {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
 
-   .content-container > div:first-child {
-     margin-right: 0;
-     margin-bottom: 25px;
-   }
+  .box {
+    width: 240px;
+    height: 300px;
+  }
 
-   .box {
-     width: 210px;
-     height: 270px;
-   }
+  .box-under-title {
+    align-self: center;
+  }
 }

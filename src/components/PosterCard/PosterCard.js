@@ -5,7 +5,7 @@ const PosterCard = props => {
   return (
     <div className="box-main" >
       <div>
-        <img className="box-image" src={props.src}  />
+        <img className="box-image" src={props.src} alt="posters" />
       </div>
       <div className="box-title">
         <p>{props.title}</p>

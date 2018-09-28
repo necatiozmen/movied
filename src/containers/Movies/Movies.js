@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getMovies, changeHeaderTitle } from '../../actions';
 import Content from '../../components/Content/Content';
-import './Movies.css';
 
 class Movies extends Component {
 
   componentDidMount() {
-    // this.props.movies.length === 0 ?  this.props.getMoviesDispatch() : null;
     this.props.getMoviesDispatch();
     this.props.changeHeaderTitle('Popular Movies');
   };
@@ -16,10 +14,8 @@ class Movies extends Component {
     return (
       <Content
         entries={this.props.movies}
-        types={'movie'}
         isReady={this.props.isReady}
         isSomethingWrong={this.props.isSomethingWrong}
-        headerTit={'Popular Movies'}
       />
     );
   }

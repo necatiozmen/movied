@@ -12,7 +12,7 @@ const Header = props => {
             <h1 className="header-title">DEMO Streaming</h1>
           </Link>
         </div>
-        <div className="login">
+        <div className="login-container">
           <div className="login-box"><p>Log in</p></div>
           <div className="login-box"><p>Start your free trial</p></div>
         </div>
@@ -27,7 +27,7 @@ const Header = props => {
 };
 
 const mapStateToProps = state => ({
-  headerTitle: state.movieList.headerTitle,
+  headerTitle: state.headerType.headerTitle,
 });
 
 export default connect(mapStateToProps, null)(Header);
