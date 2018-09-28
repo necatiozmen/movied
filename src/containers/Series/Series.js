@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { getSeries, changeHeaderTitle } from '../../actions';
 import Content from '../../components/Content/Content';
 
@@ -31,5 +32,13 @@ const mapDispatchToProps = dispatch => ({
   getSeriesDispatch: data => dispatch(getSeries(data)),
   changeHeaderTitle: data => dispatch(changeHeaderTitle(data)),
 });
+
+Series.propTypes = {
+  getSeriesDispatch: PropTypes.func.isRequired,
+  changeHeaderTitle: PropTypes.func.isRequired,
+  series: PropTypes.array.isRequired,
+  isReady: PropTypes.bool,
+  isSomethingWrong: PropTypes.bool,
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Series);

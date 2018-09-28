@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import PosterCard from '../PosterCard/PosterCard';
 import './Content.css';
 
@@ -28,6 +29,12 @@ const Content = props => {
       </div>
     </div>
   );
+};
+
+Content.propTypes = {
+  entries: PropTypes.array.isRequired,
+  isReady: PropTypes.bool,
+  isSomethingWrong: PropTypes.bool,
 };
 
 export default Content;

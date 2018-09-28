@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { getMovies, changeHeaderTitle } from '../../actions';
 import Content from '../../components/Content/Content';
 
@@ -31,5 +32,13 @@ const mapDispatchToProps = dispatch => ({
   getMoviesDispatch: data => dispatch(getMovies(data)),
   changeHeaderTitle: data => dispatch(changeHeaderTitle(data)),
 });
+
+Movies.propTypes = {
+  getMoviesDispatch: PropTypes.func.isRequired,
+  changeHeaderTitle: PropTypes.func.isRequired,
+  movies: PropTypes.array.isRequired,
+  isReady: PropTypes.bool,
+  isSomethingWrong: PropTypes.bool,
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Movies);

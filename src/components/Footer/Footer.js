@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css';
 import Icon from '../Icons';
 
-const Footer = props => {
+const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer-inner-container">
