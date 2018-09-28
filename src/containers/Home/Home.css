@@ -1,30 +1,62 @@
 .container {
- padding: 20px;
+ font-family: 'Open Sans', 'Roboto', sans-serif;
+ font-weight: 300;
+ font-size: 14px;
 }
 
-
-.content-title {
+.home-container {
   display: flex;
-  align-items: center;
-  padding-left: 80px;
-  height: 40px;
-  background-color: #606470;
+  padding: 35px 95px 80px;
+  background-color: #FDFDFD;
+}
+
+.home-container > div:first-child {
+  margin-right: 15px;
 }
 
 .box-container {
   display: flex;
-  /* justify-content: space-around; */
-  padding-left: 80px;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .box {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 150px;
-  background-color: #f3ecc8;
-  margin-right: 10px;
+  width: 140px;
+  height: 200px;
+  background-color: #1E1E1E;
+  background-image: url('../../assets/placeholder.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 667px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-container {
+    flex-direction: column;
+  }
+
+  .home-container > div:first-child {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+
+  .box {
+    width: 240px;
+    height: 300px;
+  }
+
+  .box-under-title {
+    align-self: center;
+  }
 }

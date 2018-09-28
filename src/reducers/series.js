@@ -1,22 +1,22 @@
 const defaultState = {
-  movies: [],
+  series: [],
 };
 
-const movies = (state = defaultState, action) => {
+const series = (state = defaultState, action) => {
   switch (action.type) {
-    case 'GET_MOVIES_REQUEST':
+    case 'GET_SERIES_REQUEST':
       return { ...state, getEntriesFromDatabase: false };
-    case 'GET_MOVIES_SUCCESS':
+    case 'GET_SERIES_SUCCESS':
       return {
         ...state,
-        movies: action.data,
+        series: action.data,
         getEntriesFromDatabase: true,
       };
-    case 'GET_MOVIES_FAILURE':
+    case 'GET_SERIES_FAILURE':
       return { ...state, getEntriesFromDatabaseFailed: true };
     default:
       return state;
   }
 };
 
-export default movies;
+export default series;

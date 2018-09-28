@@ -3,23 +3,12 @@
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;;
-  padding-right: 20px;;
-}
-
-.App-container {
-  /* display: flex;
-  flex-direction: column; */
 }
 
 @media only screen
-  and (min-width: 320px)  
-  and (max-width: 667px)
- {
-    .App {
-      overflow-x: hidden;
-      padding-left: 0px;;
-      padding-right: 0px;;
-    }
-
+  and (min-width: 320px)
+  and (max-width: 667px) {
+  .App {
+    overflow-x: hidden;
+  }
 }

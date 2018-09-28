@@ -4,6 +4,7 @@ export const getMovies = () => ({
   type: 'GET_MOVIES',
   [API]: {
     endpoint: '/v1/api/feed/movies',
+    method: 'GET',
   },
 });
 
@@ -11,6 +12,7 @@ export const getSeries = () => ({
   type: 'GET_SERIES',
   [API]: {
     endpoint: '/v1/api/feed/series',
+    method: 'GET',
   },
 });
 

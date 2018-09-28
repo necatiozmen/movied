@@ -1,18 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import PosterCard from '../PosterCard/PosterCard';
 import './Content.css';
 
 const Content = props => {
   const listItems = () => {
     if (!props.isSomethingWrong) {
       return props.entries.map((item, index) =>
-        <div className="box-main" key={index}>
-          <div>
-            <img className="box-image" src={item.images['Poster Art'].url}  />
-          </div>
-          <div>
-            <p>{item.title}</p>
-          </div>
-        </div>);
+       <PosterCard
+         key={index}
+         src={item.images['Poster Art'].url}
+         title={item.title}
+       />
+      );
     }
 
     return <div><p>Oops.. Something went wrong</p></div>;
@@ -23,12 +23,18 @@ const Content = props => {
     : listItems();
 
   return (
-    <div className="maincontent-container">
-      <div className="innercontainer">
+    <div className="content-container">
+      <div className="inner-container">
         {content}
       </div>
     </div>
   );
+};
+
+Content.propTypes = {
+  entries: PropTypes.array.isRequired,
+  isReady: PropTypes.bool,
+  isSomethingWrong: PropTypes.bool,
 };
 
 export default Content;
