@@ -7,7 +7,7 @@ import Content from '../../components/Content/Content';
 class Movies extends Component {
 
   componentDidMount() {
-    this.props.getMoviesDispatch();
+    this.props.getMovies();
     this.props.changeHeaderTitle('Popular Movies');
   };
 
@@ -29,12 +29,12 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  getMoviesDispatch: data => dispatch(getMovies(data)),
+  getMovies: data => dispatch(getMovies(data)),
   changeHeaderTitle: data => dispatch(changeHeaderTitle(data)),
 });
 
 Movies.propTypes = {
-  getMoviesDispatch: PropTypes.func.isRequired,
+  getMovies: PropTypes.func.isRequired,
   changeHeaderTitle: PropTypes.func.isRequired,
   movies: PropTypes.array.isRequired,
   isReady: PropTypes.bool,
