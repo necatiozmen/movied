@@ -7,7 +7,7 @@ import Content from '../../components/Content/Content';
 class Series extends Component {
 
   componentDidMount() {
-    this.props.getSeriesDispatch();
+    this.props.getSeries();
     this.props.changeHeaderTitle('Popular Series');
   };
 
@@ -29,12 +29,12 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  getSeriesDispatch: data => dispatch(getSeries(data)),
+  getSeries: data => dispatch(getSeries(data)),
   changeHeaderTitle: data => dispatch(changeHeaderTitle(data)),
 });
 
 Series.propTypes = {
-  getSeriesDispatch: PropTypes.func.isRequired,
+  getSeries: PropTypes.func.isRequired,
   changeHeaderTitle: PropTypes.func.isRequired,
   series: PropTypes.array.isRequired,
   isReady: PropTypes.bool,
