@@ -5,7 +5,6 @@ import { getMovies, changeHeaderTitle } from '../../actions';
 import Content from '../../components/Content/Content';
 
 class Movies extends Component {
-
   componentDidMount() {
     this.props.getMovies();
     this.props.changeHeaderTitle('Popular Movies');
@@ -29,7 +28,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  getMovies: data => dispatch(getMovies(data)),
+  getMovies: () => dispatch(getMovies()),
   changeHeaderTitle: data => dispatch(changeHeaderTitle(data)),
 });
 
