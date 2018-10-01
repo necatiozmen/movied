@@ -51,4 +51,4 @@ Go to the choosen app directory on the CLI then run this command into server fol
 
 #### Tech Stack
 
-<p>v1. React - Redux - Express.js</p>
+<p>React - Redux - Express.js</p>
