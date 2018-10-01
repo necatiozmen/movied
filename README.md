@@ -3,7 +3,7 @@
  <img width= "200px" src="https://image.ibb.co/hoNnbz/logo_preview_21ae9e67_10cb_448d_bd21_ab29307ef3e8.jpg" ></img>
 </div>
 
-## About
+### About
 
 
  <p>Simple demo project build with React-Redux-Express.js</p>
@@ -13,7 +13,7 @@
  <p>Typescript version -> https://github.com/necatiozmen/movied-typescript<p>
 
 
-## Getting Started
+### Getting Started
 <div>
 <div>
   <img src="https://preview.ibb.co/n4Atie/Screen_Shot_2018_10_01_at_12_47_49.png"  height="300" >
@@ -24,7 +24,7 @@
 
 ### Client
 
-Clone and install the dependencies for the repo:
+Clone and install the dependencies:
 
 `git clone https://github.com/necatiozmen/movied.git`
 
@@ -38,7 +38,7 @@ After installing dependecies run this command -
 
 ### Server
 
-Clone and install the dependencies for the repo:
+Clone and install the dependencies:
 
 Go to https://github.com/necatiozmen/movied-server.git
 
@@ -47,10 +47,6 @@ Go to the choosen app directory on the CLI then run this command into server fol
 `npm install` and then:
 `node app.js`
 
-## Tech Stack
+### Tech Stack
 
 <p>v1. React - Redux - Express.js</p>
-
-<p>v2. Next.js - Redux - Express.js</p>
-
-<p>v3. React with Typescript - Redux - Express.js </p>
