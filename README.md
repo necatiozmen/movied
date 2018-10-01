@@ -4,6 +4,7 @@
 </div>
 
 ### About
+---
 
 
  <p>Simple demo project build with React-Redux-Express.js</p>
@@ -14,6 +15,7 @@
 
 
 ### Getting Started
+---
 <div>
 <div>
   <img src="https://preview.ibb.co/n4Atie/Screen_Shot_2018_10_01_at_12_47_49.png"  height="300" >
@@ -22,7 +24,7 @@
 <hr>
 </div>
 
-### Client
+#### Client
 
 Clone and install the dependencies:
 
@@ -36,7 +38,7 @@ After installing dependecies run this command -
 
 `npm start`
 
-### Server
+#### Server
 
 Clone and install the dependencies:
 
@@ -47,6 +49,6 @@ Go to the choosen app directory on the CLI then run this command into server fol
 `npm install` and then:
 `node app.js`
 
-### Tech Stack
+#### Tech Stack
 
 <p>v1. React - Redux - Express.js</p>
