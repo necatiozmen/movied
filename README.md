@@ -6,7 +6,7 @@
 ## About
 
 
- <p>Simple demo project build by React-Redux-Express.js</p>
+ <p>Simple demo project build with React-Redux-Express.js</p>
 
  <p>Next.js version -> https://github.com/necatiozmen/movied-next<p>
 
