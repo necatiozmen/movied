@@ -5,7 +5,6 @@ import { getSeries, changeHeaderTitle } from '../../actions';
 import Content from '../../components/Content/Content';
 
 class Series extends Component {
-
   componentDidMount() {
     this.props.getSeries();
     this.props.changeHeaderTitle('Popular Series');
@@ -29,7 +28,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  getSeries: data => dispatch(getSeries(data)),
+  getSeries: () => dispatch(getSeries()),
   changeHeaderTitle: data => dispatch(changeHeaderTitle(data)),
 });
 
